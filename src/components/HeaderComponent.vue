@@ -13,15 +13,20 @@
     </header>
 </template>
 
+<script>
+export default {
+    name: 'HeaderComponent'
+}
+</script>
+
+
 
 <!-- Foglio di Stile per l'header -->
 <style lang="scss" scoped>
-    
     // Allineo l'header al centro
     header {
         text-align: center;
     }
-    
     
     // Annidamento generale, i link (a) dentro la Nav sono senza text decoration
     nav {

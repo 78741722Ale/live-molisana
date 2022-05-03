@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <!-- Logo di Molisano -->
-                <div class="col">
+                <div class="col text_center ">
                     <img src="@/assets/img/la-molisana-logo.png" alt="">
                 </div>
                 <!-- Prima lista -->
@@ -38,14 +38,15 @@
     </footer>
 </template>
 
+<!-- Export del footer -->
+<script>
+export default {
+    name: 'FooterComponent'
+}
+</script>
 
 <!-- Foglio di Stile per il Footer -->
 <style lang="scss" scoped>
-
-// Lista non ordinata globale
-ul {
-    list-style: none;
-}
 
 // site Footer
 Footer {
@@ -54,5 +55,16 @@ Footer {
     background-position: bottom;
     height: 400px;
     padding-top: 3rem;
+    // Titolo H3
+    h3 {
+        margin: 1.25rem;
+    }
+    // Lista non ordinata globale
+    ul {
+        list-style: none;
+        line-height: 1.5rem;
+    }
+
+
 }
 </style>

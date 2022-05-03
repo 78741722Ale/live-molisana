@@ -2,10 +2,8 @@
   <div id="app">
     <!-- Questo è il componente Site Header -->
     <SiteHeader />
-    <!-- Main -->
-    <main>
-      <h1>Lista Prodotti</h1>
-    </main>
+    <!-- Questo è il componente Site Main -->
+    <SiteMain />
     <!-- Questo è il componente Site footer -->
     <SiteFooter />
   </div>
@@ -14,7 +12,8 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import SiteHeader from '@/components/HeaderComponent.vue';
-import SiteFooter from '@/components/FooterComponent.vue'
+import SiteFooter from '@/components/FooterComponent.vue';
+import SiteMain from '@/components/MainComponent.vue'
 
 
 export default {
@@ -22,8 +21,9 @@ export default {
   components: {
     // HelloWorld
     SiteHeader,
-    SiteFooter
-  }
+    SiteFooter,
+    SiteMain
+  },
 }
 </script>
 
@@ -44,24 +44,32 @@ export default {
   margin-top: 60px;
 }
 
+/* Classi utilities */
+.text_center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
 // Main
 main {
   background-image: url('@/assets/img/fondo-pag-speciali.jpg');
   min-height: 50vh;
   background-size: cover;
+  padding-bottom: 2rem;
+  // H1 dentro al main
+  h1 {
+    padding: 2rem 0;
+    text-align: center;
+  }
 }
 
-// Grid Sistem per il footer
-.container {
-  margin: auto;
-  max-width: 1440px;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.col {
-  flex-grow: 1;
-}
+// Import dal file di Sass
+// La cartella si chiama sass, ma il file ha estensione scss
+// attenzione
+@import '@/assets/sass/grid_sistem';
+
 
 </style>
