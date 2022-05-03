@@ -1,6 +1,7 @@
 <template>
 <!-- Tutto questo è il componente Container -->
     <div class="container">
+      <!-- /.row -->
       <div class="row">
         <!-- Questo è il modo per dichiarare -->
         <!-- key è obbligatorio -->
